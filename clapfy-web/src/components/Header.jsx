@@ -1,13 +1,11 @@
 import React from 'react';
-import '../styles/components/Header.css';
+import '../styles/components/Header.scss';
 
 const Header = () => {
   return (
     <div className='Header'>
-      <h1 className='Header-title'>PlatziConf Merch</h1>
-      <div className='Header-checkout'>
-        Checkout
-      </div>
+      <p className='Header-title'>Clapfy</p>
+      <p className='Header-menu'>menu</p>
     </div>
   )
 }

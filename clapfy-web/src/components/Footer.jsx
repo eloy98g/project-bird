@@ -3,10 +3,7 @@ import '../styles/components/Footer.css';
 
 const Footer = () => {
   return (
-    <div className='Footer'>
-      <p className='Footer-title'>Platzi Conf Merch</p>
-      <p className="Footer-copy">All right reserved</p>
-    </div>
+    <h1>Footer</h1>
   )
 }
 
