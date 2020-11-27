@@ -1,0 +1,13 @@
+{
+  "name": "clapfy-web",
+  "short_name": "clapfy-web",
+  "start_url": ".",
+  "description": "Clapfy web",
+  "icons": [
+      {
+          "src": "../src/styles/static/Icon.png",
+          "sizes": "48x48",
+          "type": "image/png"
+      }
+  ]
+}

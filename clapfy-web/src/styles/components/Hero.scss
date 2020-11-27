@@ -1,0 +1,37 @@
+.Hero{
+  width: 100%;
+  height: auto;
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Hero .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+
+.Hero .bold{
+  font-size: 4em;
+  font-weight: bold;
+  -webkit-text-stroke: 1px black;
+  color: transparent; 
+}
+
+.message{
+  margin: 160px 240px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.message-container{
+  font-size: 30px;
+  line-height: 50px;
+  letter-spacing: 0.02em;
+}

@@ -52,7 +52,7 @@ module.exports = {
           'sass-loader',
         ],
       },
-      /*{
+      {
         test: /\.(png|gif|jpg)$/,
         use: [
           {
@@ -60,7 +60,7 @@ module.exports = {
             options: { name: 'assets/[hash].[ext]' },
           }
         ],
-      },*/
+      },
     ],
   },
   // Se añaden los plugins que necesitamos
@@ -70,7 +70,7 @@ module.exports = {
       filename: 'assets/[name].css',
     }),
     new HtmlWebpackPlugin({
-      //Donde esta ubicado el template que tenemos
+      // Donde esta ubicado el template que tenemos
       template: './public/index.html',
       filename: './index.html',
     }),
