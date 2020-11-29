@@ -10,8 +10,16 @@
 .Hero .container {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
+}
+
+.Hero .image{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.Hero-text{
+  width: 50%;
 }
 
 
@@ -23,7 +31,7 @@
 }
 
 .message{
-  margin: 160px 240px;
+  margin: 160px 170px;
   display: flex;
   flex-direction: row;
   align-items: center;

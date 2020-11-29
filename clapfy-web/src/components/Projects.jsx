@@ -1,37 +1,45 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from 'react'
+import React from 'react';
+import '../styles/components/Projects.scss';
+import wacanda from '../styles/static/wacanda.png';
+import mcdonald from '../styles/static/mcdonald.png';
 
 const Projects = () => {
   return (
-    <div className="projects">
+    <sectiom className="projects">
       <div className="container">
-        <p className="title">mejores</p>
-        <p className="subtitle">proyectos</p>
+        <div className="projects-banner">
+          <p>mejores</p>
+          <p className="subtitle">proyectos</p>
+        </div>
         <div className="projects-grid">
-          <figure className="project-item">
+          <figure className="project-item first">
             <a href="/">
-              <img src="" alt="" className="project-item__banner" />
-              <figcaption className="project-item__desc">
-                <p className="name">Wacanda</p>
-                <p className="desceiption">Poniendo Last-Mile Delivery en África Septentrional</p>
-                <p className="services">Branding, Product Design</p>
-              </figcaption>
+              <img src={wacanda} alt="" className="project-item__banner" />
             </a>
+            <figcaption className="project-item__desc">
+              <p className="name">Wacanda</p>
+              <p className="description">Poniendo Last-Mile Delivery en África Septentrional</p>
+              <p className="services">Branding, Product Design</p>
+            </figcaption>
           </figure>
-          <figure className="project-item">
+          <figure className="project-item second">
             <a href="/">
-              <img src="" alt="" className="project-item__banner" />
-              <figcaption className="project-item__desc">
-                <p className="name">Fundación infantil Ronald McDonald</p>
-                <p className="desceiption">Ayudando a McDonald's a cuidar familias</p>
-                <p className="services">UX Research, Product Design, Development</p>
-              </figcaption>
+              <img src={mcdonald} alt="" className="project-item__banner" />
             </a>
+            <figcaption className="project-item__desc">
+              <p className="name">Fundación infantil Ronald McDonald</p>
+              <p className="description">Ayudando a McDonald's a cuidar familias</p>
+              <p className="services">UX Research, Product Design, Development</p>
+            </figcaption>
           </figure>
         </div>
-        <p className="project-footer">Ver Todo</p>
+        <div className="projects-footer">
+          <a className='link' href="/">Ver todos</a>
+        </div>
+        
       </div>
-    </div>
+    </sectiom>
   )
 }
 
