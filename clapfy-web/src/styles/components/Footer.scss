@@ -1,0 +1,62 @@
+.footer{
+  background-color: black;
+  color: white;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.footer .container{
+  display: flex;
+  flex-direction: column;
+  margin: 0 120px;
+  padding-top: 200px;
+  padding-bottom: 60px;
+}
+
+.footer-main{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 220px;
+}
+
+.footer-main__dudas{
+  font-size: 2.5em;
+  font-weight: normal;
+}
+
+.footer-main__dudas p{
+  font-weight: bold;
+  width: 60%;
+}
+
+.footer-main__dudas:nth-child(2){
+  margin-bottom: 10px;
+  //border-bottom: 2px solid white;
+}
+
+.footer-main__descubre{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  font-size: 20px;
+  width: 20%;
+}
+
+.footer-section-title{
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.footer-main__encuentra{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.footer-company{
+  display: inline-flex;
+  margin-bottom: 30px;
+  justify-content: center;
+}

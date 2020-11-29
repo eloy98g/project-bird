@@ -4,6 +4,7 @@ import Hero from '../components/Hero';
 import '../styles/containers/Home.scss';
 import Projects from '../components/Projects';
 import News from '../components/News';
+import Footer from '../components/Footer'
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Hero />
       <Projects />
       <News />
+      <Footer />
     </>
   )
 }
