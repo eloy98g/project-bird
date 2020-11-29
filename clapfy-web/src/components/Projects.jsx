@@ -13,7 +13,7 @@ const Projects = () => {
           <p className="subtitle">proyectos</p>
         </div>
         <div className="projects-grid">
-          <figure className="project-item first">
+          <figure className="project-item">
             <a href="/">
               <img src={wacanda} alt="" className="project-item__banner" />
             </a>
@@ -23,7 +23,7 @@ const Projects = () => {
               <p className="services">Branding, Product Design</p>
             </figcaption>
           </figure>
-          <figure className="project-item second">
+          <figure className="project-item">
             <a href="/">
               <img src={mcdonald} alt="" className="project-item__banner" />
             </a>

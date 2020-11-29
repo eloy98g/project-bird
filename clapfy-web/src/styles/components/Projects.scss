@@ -5,22 +5,20 @@
 }
 
 .projects-grid{
-  display: inline-flex;
-  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
 }
 
-.projects-item{
+.project-item{
   width: 50%;
 }
 
-.first{
+.project-item:nth-child(1){
   margin-top: 150px;
-  margin-right: 100px;
 }
-
 .project-item__banner{
-  width: 500px;
-  height: 560px;
+  width: 100%;
 }
 
 .project-item__desc{
