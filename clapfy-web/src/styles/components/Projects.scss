@@ -5,6 +5,7 @@
 }
 
 .projects-grid{
+  margin-top: 100px;
   display: flex;
   flex-direction: row;
   gap: 100px;
@@ -27,7 +28,7 @@
 }
 
 .name{
-  font-size: 1.5em;
+  font-size: 1.2em;
   color: #6F6F6F;
 }
 
@@ -38,13 +39,13 @@
 
 .services{
   color: #999999;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .projects-footer{
   margin-top: 100px;
   text-align: end;
-  font-size: 2em;
+  font-size: 1.9em;
 }
 
 .link{
