@@ -1,14 +1,14 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import '../styles/components/Projects.scss';
-import wacanda from '../styles/static/wacanda.png';
-import mcdonald from '../styles/static/mcdonald.png';
+import wacanda from '../styles/static/wacanda-banner.png';
+import mcdonald from '../styles/static/mcdonald-banner.png';
 
 const Projects = () => {
   return (
     <sectiom className="projects">
       <div className="container">
-        <div className="projects-banner">
+        <div className="banner">
           <p>mejores</p>
           <p className="subtitle">proyectos</p>
         </div>
