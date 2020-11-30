@@ -7,8 +7,8 @@ const Footer = () => {
       <div className="container">
         <div className="footer-main">
           <div className="footer-main__dudas">
-            <p>Si tienes una idea,</p>
-            <u>te ayudamos.</u>
+            <p className='dudas-title'>Si tienes una idea,</p>
+            <u className='dudas-subtitle'>te ayudamos.</u>
           </div>
           <div className="footer-main__descubre">
             <p className='footer-section-title'>Descubre</p>
@@ -19,8 +19,8 @@ const Footer = () => {
           </div>
           <div className="footer-main__encuentra">
             <p className="footer-section-title">Encuentra</p>
-            <p>Calle Duque de Alba</p> 
-            <p>28012 Madrid</p>
+            <a href="/">Calle Duque de Alba</a>
+            <a href="/">28012 Madrid</a>
           </div>
         </div>
         <div className="footer-company">
