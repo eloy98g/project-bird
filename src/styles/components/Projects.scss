@@ -1,7 +1,7 @@
 .projects .container{
   display: flex;
   flex-direction: column;
-  margin: 0 120px;
+  padding: 0 120px;
 }
 
 .projects-grid{
@@ -28,24 +28,27 @@
 }
 
 .name{
-  font-size: 1.2em;
+  font-size: 20px;
   color: #6F6F6F;
+  letter-spacing: -0.02em;
 }
 
 .description{
   padding: 13px 0;
-  font-size: 2em;
+  font-size: 29px;
+  letter-spacing: 0.02em;
 }
 
 .services{
   color: #999999;
-  font-size: 1em;
+  font-size: 15px;
 }
 
 .projects-footer{
   margin-top: 100px;
   text-align: end;
-  font-size: 1.9em;
+  font-size: 30px;
+  letter-spacing: -0.01em;
 }
 
 .link{

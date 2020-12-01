@@ -1,15 +1,27 @@
 .footer{
   background-color: black;
   color: white;
+  width: 100%;
+  
 }
+
 a{
   text-decoration: none;
   color: white;
 }
-.footer .container{
+
+.footer-content{
+  width: 100%;
   display: flex;
   flex-direction: column;
-  margin: 0 120px;
+  align-items: center;
+}
+
+.footer-content .container{
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  padding: 0 174px;
   padding-top: 200px;
   padding-bottom: 60px;
 }
@@ -22,9 +34,9 @@ a{
 }
 
 .footer-main__dudas{
-  font-size: 2.5em;
   letter-spacing: 2px;
   width: 50%;
+  font-size: 46px;
 }
 
 .footer-main__dudas .dudas-title{

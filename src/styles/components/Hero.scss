@@ -1,7 +1,6 @@
 .Hero{
   width: 100%;
   height: auto;
-  font-size: 1.2em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,18 +19,20 @@
 
 .Hero-text{
   width: 50%;
+  font-size: 24px;
 }
 
 
 .Hero .bold{
-  font-size: 4em;
+  font-size: 78px;
   font-weight: bold;
   -webkit-text-stroke: 1px black;
   color: transparent; 
 }
 
 .message{
-  margin: 160px 170px;
+  padding: 0 240px;
+  margin: 160px 0;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -39,7 +40,7 @@
 }
 
 .message-container{
-  font-size: 2.4vw;
+  font-size: 30px;
   line-height: 50px;
   letter-spacing: 0.02em;
 }

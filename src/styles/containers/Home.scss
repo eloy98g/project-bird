@@ -1,12 +1,23 @@
 .container{
-  margin: 0 170px;
+  width: 100%;
+  padding: 0;
+}
+
+.window{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.window-content{
+  max-width: 1440px;
 }
 
 .banner{
-  margin-left: 50px; 
+  padding-left: 50px; 
   line-height: 55px;
   letter-spacing: 0.05em;
-  font-size: 2.5em;
+  font-size: 47px;
 }
 
 .subtitle{
