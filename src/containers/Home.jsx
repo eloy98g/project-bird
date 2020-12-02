@@ -10,8 +10,8 @@ const Home = () => {
   return (
     <>
       <div className="window">
+        <Header />
         <div className="window-content">
-          <Header />
           <Hero />
           <Projects />
           <News />

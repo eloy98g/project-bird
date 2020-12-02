@@ -1,7 +1,7 @@
 .projects .container{
   display: flex;
   flex-direction: column;
-  padding: 0 120px;
+  
 }
 
 .projects-grid{
@@ -24,7 +24,7 @@
 
 .project-item__desc{
   margin-top: 30px;
-  padding: 0 30px;
+  padding: 0 50px;
 }
 
 .name{
@@ -35,7 +35,7 @@
 
 .description{
   padding: 13px 0;
-  font-size: 29px;
+  font-size: 28px;
   letter-spacing: 0.02em;
 }
 
@@ -46,6 +46,7 @@
 
 .projects-footer{
   margin-top: 100px;
+  padding: 0 70px;
   text-align: end;
   font-size: 30px;
   letter-spacing: -0.01em;
