@@ -20,8 +20,8 @@ const Footer = () => {
             </div>
             <div className="footer-main__encuentra">
               <p className="footer-section-title">Encuentra</p>
-              <a href="/">Calle Duque de Alba</a>
-              <a href="/">28012 Madrid</a>
+              <a href="https://goo.gl/maps/LqFfwmccHHe7F4Tu6">Calle Duque de Alba</a>
+              <a href="https://goo.gl/maps/LqFfwmccHHe7F4Tu6">28012 Madrid</a>
             </div>
           </div>
           <div className="footer-company">
