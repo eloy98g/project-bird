@@ -13,8 +13,19 @@
 .Header-title{
   font-size: 26px;
   font-weight: bold;
+  color: black;
+}
+
+.Header-menu-container{
+  display: inline-flex;
+  align-items: center;
 }
 
 .Header-menu{
   font-size: 24px;
+  margin-right: 20px;
+}
+
+.burguer-button{
+  color: black;
 }
