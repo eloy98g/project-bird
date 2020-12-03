@@ -6,36 +6,37 @@ const ContactForm = () => {
     <div className="contact">
       <div className="container">
         <div className="form-title">
-          <p>Hey! Cuéntanos más sobre tu proyecto</p>
+          <p>Hey! &#x1F44B;	Cuéntanos más sobre tu proyecto</p>
         </div>
         <div className="contact-form">
           <div className="form-interests">
             <p>Estoy interesado en...</p>
             <div className="interest-buttons">
-              <button className='interest-button' type='button'>Branding</button>
-              <button className='interest-button' type='button'>Mobile</button>
-              <button className='interest-button' type='button'>WebApp</button>
-              <button className='interest-button' type='button'>Estrategia</button>
-              <button className='interest-button' type='button'>UX / UI</button>
-              <button className='interest-button' type='button'>Diseño gráfico</button>
-              <button className='interest-button' type='button'>Producto</button>
-              <button className='interest-button' type='button'>Otros</button>
+              <button className='interest-button' type='button'><p>Branding</p></button>
+              <button className='interest-button-selected' type='button'><p>Mobile</p></button>
+              <button className='interest-button' type='button'><p>WebApp</p></button>
+              <button className='interest-button' type='button'><p>Estrategia</p></button>
+              <button className='interest-button' type='button'><p>UX / UI</p></button>
+              <button className='interest-button' type='button'><p>Diseño gráfico</p></button>
+              <button className='interest-button-selected' type='button'><p>Producto</p></button>
+              <button className='interest-button' type='button'><p>Otros</p></button>
             </div>
           </div>
           <div className="form-personal-data">
-            <p>Tu nombre</p>
+            <p className='section-title'>Tu nombre</p>
             <input className="text-input" type="text" placeholder="Nombre" />
-            <p>Tu email</p>
+            <p className='section-title'>Tu email</p>
             <input className="text-input" type="text" placeholder="Email" />
           </div>
-          <div className="form presupuesto">
-            <p>Presupuesto en euros</p>
-            <button className='interest-button' type='button'>dinero</button>
+          <div className="form-presupuesto">
+            <p className='section-title'>Presupuesto en euros</p>
+            <button className='presupuesto-button' type='button'>dinero</button>
           </div>
           <div className="form-tellus">
-            <p>Cuéntanos todo</p>
-            <input className="text-input" type="text" placeholder="Tu idea" />
+            <p className='section-title'>Cuéntanos todo</p>
+            <textarea className="text-input-tellus" type="text" placeholder="Tu idea" />
           </div>
+          <button className="submit" type='button'>Enviar</button>
         </div>
       </div>
     </div>
