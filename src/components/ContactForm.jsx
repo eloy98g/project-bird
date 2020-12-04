@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
 import '../styles/components/ContactForm.scss';
 
@@ -13,28 +14,56 @@ const ContactForm = () => {
             <p>Estoy interesado en...</p>
             <div className="interest-buttons">
               <button className='interest-button' type='button'><p>Branding</p></button>
-              <button className='interest-button-selected' type='button'><p>Mobile</p></button>
+              <button className='interest-button selected' type='button'><p>Mobile</p></button>
               <button className='interest-button' type='button'><p>WebApp</p></button>
               <button className='interest-button' type='button'><p>Estrategia</p></button>
               <button className='interest-button' type='button'><p>UX / UI</p></button>
               <button className='interest-button' type='button'><p>Diseño gráfico</p></button>
-              <button className='interest-button-selected' type='button'><p>Producto</p></button>
+              <button className='interest-button selected' type='button'><p>Producto</p></button>
               <button className='interest-button' type='button'><p>Otros</p></button>
             </div>
           </div>
           <div className="form-personal-data">
-            <p className='section-title'>Tu nombre</p>
-            <input className="text-input" type="text" placeholder="Nombre" />
-            <p className='section-title'>Tu email</p>
-            <input className="text-input" type="text" placeholder="Email" />
+            <div className="form">
+              <input 
+                className="text-input" 
+                type="text" 
+                autoComplete='off'
+                name='name'
+                required
+              />
+              <label htmlFor='name' className='sub-section-title'>
+                <span className="content-title">Nombre</span>
+              </label>
+            </div>
+            <div className="form">
+              <input 
+                className="text-input" 
+                type="text"
+                autoComplete='off'
+                name='email'
+                required
+              />
+              <label htmlFor='email' className='sub-section-title'>
+                <span className="content-title">Email</span>
+              </label>
+            </div>
           </div>
-          <div className="form-presupuesto">
+          <div className="sub-section-title">
             <p className='section-title'>Presupuesto en euros</p>
             <button className='presupuesto-button' type='button'>dinero</button>
           </div>
-          <div className="form-tellus">
-            <p className='section-title'>Cuéntanos todo</p>
-            <textarea className="text-input-tellus" type="text" placeholder="Tu idea" />
+          <div className="form tellus">
+            <textarea 
+              className="text-input" 
+              type="text" 
+              name='idea'
+              required
+              autoComplete='off'
+            />
+            <label htmlFor='idea' className='sub-section-title'>
+              <span className="content-title">Cuéntanos todo</span>
+            </label>
           </div>
           <button className="submit" type='button'>Enviar</button>
         </div>
