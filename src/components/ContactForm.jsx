@@ -49,7 +49,7 @@ const ContactForm = () => {
               </label>
             </div>
           </div>
-          <div className="sub-section-title">
+          <div className="form-presupuesto">
             <p className='section-title'>Presupuesto en euros</p>
             <button className='presupuesto-button' type='button'>dinero</button>
           </div>
