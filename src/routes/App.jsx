@@ -8,10 +8,12 @@ import AboutUs from '../containers/AboutUs';
 import Purpose from '../containers/Purpose';
 import Works from '../containers/Works';
 import Services from '../containers/Services';
+import ScrollToTop from '../utils/ScrollToTop';
 
 const App = () => {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Layout>
         <Switch>
           <Route exact path='/' component={Home} />
