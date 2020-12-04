@@ -51,6 +51,7 @@
 .interest-button.selected{
   border: none;
   background: #292929;
+  border: 1px solid #292929;
 }
 
 .interest-button p{
@@ -62,7 +63,7 @@
 
 .interest-button.selected p{
   color: white;
-  font-family: 'Averta-bold', sans-serif;
+  //font-family: 'Averta-bold', sans-serif;
 }
 
 /* INPUT FORM */
@@ -138,27 +139,6 @@
   margin-bottom: 20px;
 }
 
-.presupuesto-button{
-  width: 100%;
-  height: 80px;
-  margin-right: 10px;
-  margin-bottom: 80px;
-  border-radius: 80px;
-  justify-content: center;
-  font-size: 20px;
-  line-height: 23px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.02em;
-  box-sizing: border-box;
-  outline: none;
-  border: none;
-  background: #292929;
-  color: white;
-  cursor: pointer;
-}
-
 .form.tellus{
   height: 275px;
 }
@@ -172,31 +152,28 @@
   transform: translateY(-240px);
 }
 
-/*
-.form-tellus{
+.form-presupuesto{
   width: 100%;
   height: auto;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 
-.text-input-tellus{
-  width: 100%;
-  resize: none;
-  background-color: transparent;
-  border-left: 0px;
-  border-top: 0px;
-  border-right: 0px;
-  border-bottom: 3px solid #D1D1D1;
-  font-family: 'Averta-Regular', sans-serif;
-  font-size: 28px;
-  line-height: 33px;
-  margin-bottom: 80px;
-  outline: none;
-  height: 225px;
-  overflow-wrap: break-word;
-  word-break: break-all;
+.interest-button.budget-item{
+  margin: 0;
+  border: none;
 }
-*/
+
+.budget-button{
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 80px;
+  border: 1px solid #E5E5E5;
+  border-radius: 80px;
+}
+
 .submit{
   outline: none;
   border: none;

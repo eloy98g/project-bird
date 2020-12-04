@@ -1,6 +1,8 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
 import '../styles/components/ContactForm.scss';
+import FormButton from '../widgets/FormButton';
+import BudgetButton from '../widgets/BudgetButton';
 
 const ContactForm = () => {
   return (
@@ -13,14 +15,14 @@ const ContactForm = () => {
           <div className="form-interests">
             <p>Estoy interesado en...</p>
             <div className="interest-buttons">
-              <button className='interest-button' type='button'><p>Branding</p></button>
-              <button className='interest-button selected' type='button'><p>Mobile</p></button>
-              <button className='interest-button' type='button'><p>WebApp</p></button>
-              <button className='interest-button' type='button'><p>Estrategia</p></button>
-              <button className='interest-button' type='button'><p>UX / UI</p></button>
-              <button className='interest-button' type='button'><p>Diseño gráfico</p></button>
-              <button className='interest-button selected' type='button'><p>Producto</p></button>
-              <button className='interest-button' type='button'><p>Otros</p></button>
+              <FormButton name='Branding' />
+              <FormButton name='Mobile' />
+              <FormButton name='WebApp' />
+              <FormButton name='Estrategia' />
+              <FormButton name='UX / UI' />
+              <FormButton name='Diseño gráfico' />
+              <FormButton name='Producto' />
+              <FormButton name='Otros' />
             </div>
           </div>
           <div className="form-personal-data">
@@ -51,7 +53,7 @@ const ContactForm = () => {
           </div>
           <div className="form-presupuesto">
             <p className='section-title'>Presupuesto en euros</p>
-            <button className='presupuesto-button' type='button'>dinero</button>
+            <BudgetButton />
           </div>
           <div className="form tellus">
             <textarea 
