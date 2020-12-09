@@ -1,25 +1,18 @@
 import React from 'react';
 
-const FormButton = ({ name, properties }) => {
-  const classes = `interest-button ${properties}`;
+const FormButton = ({ name }) => {
   const handleButton = (elementId) => {
     const element = document.getElementById(elementId);
-    if(!element.classList.contains('buget-item')){
-      if(element.classList.contains('selected')){
-        element.classList.remove('selected');
-      }else{
-        element.classList.add('selected');
-      }
-    }else if(element.classList.contains('selected')){
-        element.classList.remove('selected');
-      }else{
-        element.classList.add('selected');
-      }
+    if(element.classList.contains('selected')){
+      element.classList.remove('selected');
+    }else{
+      element.classList.add('selected');
+    }
   }
 
   return (
     <button 
-      className={classes}
+      className='interest-button'
       type='button'
       id={name}
       onClick={() => handleButton(name)}
