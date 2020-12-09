@@ -163,6 +163,15 @@
   border: none;
   z-index: 2;
 }
+
+.interest-button.budget-item.between{
+  color: white;
+  background: #323232;
+}
+
+.interest-button.budget-item.between p{
+  color: white;
+}
 .interest-button.budget-item.selected{
   box-shadow: 10px 0 8px -4px rgba(237, 235, 235, 0.242), -10px 0 8px -4px rgba(237, 235, 235, 0.242);
 }
@@ -185,8 +194,8 @@
   z-index: 1;
 }
 
-.budget-span{
-  //background-color: #323232;
+.budget-span.selected{
+  background-color: #323232;
 }
 
 .budget-buttons{

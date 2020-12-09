@@ -3,7 +3,7 @@ import '../styles/components/ContactForm.scss';
 
 const BudgetButton = () => {
   const items = ['3k', '5k', '10k', '20k', '40k', '60k', 'más']; // icon: &#x1F4B0;
-  const spans = [0, 1, 2 ,3, 4, 5];
+  const spans = ['span0', 'span1', 'span2' ,'span3', 'span4', 'span5'];
   let first = null; 
   let second = null;
   
@@ -11,7 +11,7 @@ const BudgetButton = () => {
     let firstButton = null;
     let secondButton = null;
     let aux;
-    // getting indexes
+    
     for(let i = 0; i<items.length; i +=1){
       if(first === items[i]){
         firstButton = i;
@@ -20,22 +20,33 @@ const BudgetButton = () => {
         secondButton = i;
       }
     }
-    console.log(`[NO ORD]firstButton: ${firstButton} -- secondButton: ${secondButton}`)
+
     if(firstButton > secondButton){
       aux = firstButton;
       firstButton = secondButton;
       secondButton = aux;
     }
-    // for(let i = 0; i<spans.length; i +=1){
-    //   if()
-    // }
+    console.log(`firstButton: ${firstButton} -- secondButton: ${secondButton}`);
+    for(let i = 0; i<spans.length; i +=1){
+      if(i >= firstButton && i < secondButton){
+        console.log(`i: ${i}`);
+        console.log(`span: ${spans[i]}`);
+        document.getElementById(spans[i]).classList.add('selected');
+        document.getElementById(items[i]).classList.add('between');
+      }
+    }
+  }
 
-    console.log(`[ORDENA]firstButton: ${firstButton} -- secondButton: ${secondButton}`);
+  const resetBackground = () => {
+    for(let i = 0; i<spans.length; i +=1){
+      document.getElementById(spans[i]).classList.remove('selected');
+      document.getElementById(items[i]).classList.remove('between');
+    }
   }
 
   const handleButton = (elementId) => {
     const element = document.getElementById(elementId);
-
+    resetBackground();
     if(element.classList.contains('selected')){
       element.classList.remove('selected');
       if(elementId === first){
@@ -58,16 +69,14 @@ const BudgetButton = () => {
         second = elementId;
       }
     }
-    // if(first !== null && second !== null){
-    //   setBackground();
-    // }
-
-    console.log(`First: ${first} :: Second: ${second}`);
+    if(first !== null && second !== null){
+      setBackground();
+    }
   }
   
-  const BudgetSpan = () => {
+  const BudgetSpan = (id) => {
     return (
-      <div className="budget-span" />
+      <div className='budget-span' id={id} />
     )
   }
 
