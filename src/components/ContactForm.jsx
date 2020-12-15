@@ -74,6 +74,4 @@ const ContactForm = () => {
   )
 }
 
-export default ContactForm
-
-// <input type="button" value="Click me" />
+export default ContactForm;

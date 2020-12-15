@@ -26,11 +26,8 @@ const BudgetButton = () => {
       firstButton = secondButton;
       secondButton = aux;
     }
-    console.log(`firstButton: ${firstButton} -- secondButton: ${secondButton}`);
     for(let i = 0; i<spans.length; i +=1){
       if(i >= firstButton && i < secondButton){
-        console.log(`i: ${i}`);
-        console.log(`span: ${spans[i]}`);
         document.getElementById(spans[i]).classList.add('selected');
         document.getElementById(items[i]).classList.add('between');
       }
