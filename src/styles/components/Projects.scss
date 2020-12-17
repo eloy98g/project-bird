@@ -11,6 +11,7 @@
 
 .project-item{
   width: 50%;
+  transition: all 0.75s ease;
 }
 
 .project-item:nth-child(1){
@@ -63,15 +64,16 @@
   }
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 780px){  
   .projects-grid{
-    margin-top: 60px;
+    margin-top: 0px;
     display: flex;
     flex-direction: column-reverse;
+    height: auto;
   }
 
   .project-item:nth-child(1){
-    margin: 0;
+    margin: 0px;
   }
 
   .project-item{

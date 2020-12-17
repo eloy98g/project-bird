@@ -22,6 +22,7 @@
   max-width: 510px;
   position: absolute;
   left: 51%;
+  transition: all 0.75s ease;
 }
 
 .selected{
@@ -66,6 +67,11 @@
 }
 
 @media screen and (max-width: 800px){
+
+  .news .container{
+    margin: 120px 0px;
+  }
+
   .news-container{
     margin-top: 60px;
     padding: 0px 32px;
