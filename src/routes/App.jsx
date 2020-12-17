@@ -9,23 +9,28 @@ import Purpose from '../containers/Purpose';
 import Works from '../containers/Works';
 import Services from '../containers/Services';
 import ScrollToTop from '../utils/ScrollToTop';
+import AppContext from '../context/AppContext';
+import useInitialState from '../hooks/useInitialState';
 
 const App = () => {
+  const initialState = useInitialState();
   return (
-    <BrowserRouter>
-      <ScrollToTop />
-      <Layout>
-        <Switch>
-          <Route exact path='/' component={Home} />
-          <Route exact path='/contact' component={Contact} />
-          <Route exact path='/aboutus' component={AboutUs} />
-          <Route exact path='/purpose' component={Purpose} />
-          <Route exact path='/works' component={Works} />
-          <Route exact path='/services' component={Services} />
-          <Route component={NotFound} />
-        </Switch>
-      </Layout>
-    </BrowserRouter>
+    <AppContext.Provider value={initialState}>
+      <BrowserRouter>
+        <ScrollToTop />
+        <Layout>
+          <Switch>
+            <Route exact path='/' component={Home} />
+            <Route exact path='/contact' component={Contact} />
+            <Route exact path='/aboutus' component={AboutUs} />
+            <Route exact path='/purpose' component={Purpose} />
+            <Route exact path='/works' component={Works} />
+            <Route exact path='/services' component={Services} />
+            <Route component={NotFound} />
+          </Switch>
+        </Layout>
+      </BrowserRouter>
+    </AppContext.Provider>
   )
 }
 
