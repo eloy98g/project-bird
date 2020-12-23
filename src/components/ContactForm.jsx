@@ -1,31 +1,65 @@
+/* eslint-disable prefer-const */
 /* eslint-disable jsx-a11y/label-has-associated-control */
-import React from 'react';
+import React, { useRef, /* useContext */ } from 'react';
 import '../styles/components/ContactForm.scss';
 import FormButton from '../widgets/FormButton';
 import BudgetButton from '../widgets/BudgetButton';
+import arrayRemove from '../utils/ArrayRemove';
+
+// import AppContext from '../context/AppContext';
 
 const ContactForm = () => {
+  // const { state, addContact } = useContext(AppContext);
+  const form  =  useRef(null);
+
+  let interests = [];
+  // let budget = '';
+
+  const handleButton = (elementId) => {
+    const element = document.getElementById(elementId);
+    if(element.classList.contains('selected')){
+      element.classList.remove('selected');
+      interests = arrayRemove(interests, elementId);
+    }else{
+      element.classList.add('selected');
+      interests.push(elementId);
+    }
+    console.log(interests);
+  }
+
+  // const handleSubmit = () =>{
+  //   const formData = new FormData(form.current);
+  //   const contact = {
+  //     //'interests': interests,
+  //     'name': formData.get('name'),
+  //     'email': formData.get('email'),
+  //     //'budget': budget,
+  //     'idea': formData.get('idea'),
+  //   }
+  //   console.log(contact);
+  // }
+
   return (
     <div className="contact">
       <div className="container">
         <div className="form-title">
           <p>Hey! &#x1F44B;	Cuéntanos más sobre tu proyecto</p>
         </div>
-        <div className="contact-form">
+        <div ref={form} className="contact-form">
           <div className="form-interests">
             <p>Estoy interesado en...</p>
             <div className="interest-buttons">
-              <FormButton name='Branding' />
-              <FormButton name='Mobile' />
-              <FormButton name='WebApp' />
-              <FormButton name='Estrategia' />
-              <FormButton name='UX / UI' />
-              <FormButton name='Diseño gráfico' />
-              <FormButton name='Producto' />
-              <FormButton name='Otros' />
+              <FormButton name='Branding' handleButton={handleButton}/* interests={interests} */ />
+              <FormButton name='Mobile' handleButton={handleButton} />
+              <FormButton name='WebApp' handleButton={handleButton} />
+              <FormButton name='Estrategia' handleButton={handleButton} />
+              <FormButton name='UX / UI' handleButton={handleButton} />
+              <FormButton name='Diseño gráfico' handleButton={handleButton} />
+              <FormButton name='Producto' handleButton={handleButton} />
+              <FormButton name='Otros' handleButton={handleButton} />
             </div>
           </div>
-          <div className="form-personal-data">
+          <form className="form-personal-data">
             <div className="form">
               <input 
                 className="text-input" 
@@ -50,7 +84,7 @@ const ContactForm = () => {
                 <span className="content-title">Email</span>
               </label>
             </div>
-          </div>
+          </form>
           <div className="form-presupuesto">
             <p className='section-title'>Presupuesto en euros</p>
             <BudgetButton />
@@ -67,7 +101,7 @@ const ContactForm = () => {
               <span className="content-title">Cuéntanos todo</span>
             </label>
           </div>
-          <button className="submit" type='button'>Enviar</button>
+          <button className="submit" type='button' /* onClick={handleSubmit} */ >Enviar</button>
         </div>
       </div>
     </div>

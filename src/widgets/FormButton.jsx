@@ -1,15 +1,6 @@
 import React from 'react';
 
-const FormButton = ({ name }) => {
-  const handleButton = (elementId) => {
-    const element = document.getElementById(elementId);
-    if(element.classList.contains('selected')){
-      element.classList.remove('selected');
-    }else{
-      element.classList.add('selected');
-    }
-  }
-
+const FormButton = ({ name, handleButton }) => {
   return (
     <button 
       className='interest-button'
