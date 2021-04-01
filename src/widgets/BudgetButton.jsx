@@ -6,6 +6,7 @@ const BudgetButton = () => {
   const spans = ['span0', 'span1', 'span2' ,'span3', 'span4', 'span5'];
   let first = null; 
   let second = null;
+  let budget = [];
   
   const setBackground = () => {
     let firstButton = null;
@@ -44,6 +45,7 @@ const BudgetButton = () => {
   const handleButton = (elementId) => {
     const element = document.getElementById(elementId);
     resetBackground();
+    budget = [];
     if(element.classList.contains('selected')){
       element.classList.remove('selected');
       if(elementId === first){
@@ -67,8 +69,11 @@ const BudgetButton = () => {
       }
     }
     if(first !== null && second !== null){
+      budget.push(first);
+      budget.push(second);
       setBackground();
     }
+    console.log(budget);
   }
   
   const BudgetSpan = (id) => {

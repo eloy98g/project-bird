@@ -1,8 +1,8 @@
 {
-  "name": "clapfy-web",
-  "short_name": "clapfy-web",
+  "name": "eloy-gomez",
+  "short_name": "eloy-gomez",
   "start_url": ".",
-  "description": "Clapfy web",
+  "description": "Eloy Gomez",
   "icons": [
       {
           "src": "../src/styles/static/Icon.png",
